@@ -16,6 +16,8 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "resolvePackageJsonImports": true,
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
@@ -29,7 +31,7 @@
     }
   },
   "include": [
-    "src"
+    "src",
   ],
   "references": [
     {
