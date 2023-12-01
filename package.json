@@ -1,8 +1,9 @@
 {
   "name": "todos-redux",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Learning Redux: Zero to Mastery",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
