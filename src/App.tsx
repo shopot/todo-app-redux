@@ -1,7 +1,7 @@
-import './App.css'
+import { FC } from 'react';
 
-function App() {
+const App: FC = () => {
+  return <h1>Hello Redux!</h1>;
+};
 
-}
-
-export default App
+export default App;
