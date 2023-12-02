@@ -2,11 +2,11 @@ import { FC } from 'react';
 
 import styles from './TodosListItem.module.css';
 
-import { ITodo } from '@/common/interfaces';
-import { ButtonRemove } from '@/common/components';
+import { ButtonRemove } from '@/shared/components';
+import { Todo } from '../../types';
 
 type Props = {
-  todo: ITodo;
+  todo: Todo;
 };
 
 export const TodosListItem: FC<Props> = ({
