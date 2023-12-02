@@ -1,17 +1,16 @@
 import { FC } from 'react';
 
-import todos from './data/todos.json';
+import styles from './App.module.css';
 
-import { TodosList } from '@/components';
+import { TodoForm, TodosList } from '@/components';
 
 const App: FC = () => {
-  console.log(todos);
-
   return (
-    <>
-      <h1>Hello Redux!</h1>
+    <div className={styles.appContainer}>
+      <h1 className={styles.header}>Todo App</h1>
+      <TodoForm />
       <TodosList />
-    </>
+    </div>
   );
 };
 

@@ -1,0 +1,34 @@
+import { FC, useState } from 'react';
+
+import styles from './TodoForm.module.css';
+
+import { Button } from '@/common/components';
+
+export const TodoForm: FC = () => {
+  const [title, setTitle] = useState('');
+
+  const handleClick = (): void => {
+    const trimmedValue = title.trim();
+
+    if (trimmedValue) {
+      console.log('Add new todo:', trimmedValue);
+      setTitle('');
+    }
+  };
+
+  return (
+    <form className={styles.formWrapper}>
+      <div className={styles.formInputWrapper}>
+        <input
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          className={styles.formInput}
+          type="text"
+          placeholder="Add your new todo"
+          aria-label="Add your new todo"
+        />
+        <Button onCLick={handleClick}>Add new</Button>
+      </div>
+    </form>
+  );
+};
