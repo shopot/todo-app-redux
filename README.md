@@ -9,9 +9,15 @@
 4. Для конфигурации store использовать устаревшую функцию `createStore`.
 
 
-Backend для этого задания не требуется, версии пакетов обновлять не нужно, устанавливать дополнительно пакеты не требуется.
+Backend для этого задания не требуется, версии пакетов обновлять не нужно, устанавливать дополнительно пакеты не нужно.
 
-### Копирование репозитория todo-app-redux.
+### Теория
+* [Redux Base (eng)](https://handsonreact.com/docs/redux)
+* [Redux & TypeScript (eng)](https://handsonreact.com/docs/redux-typescript)
+* [Основы Redux (ru)](https://max-frontend.gitbook.io/redux-course-ru-v2/sozdanie/osnovi-redux-teoriya)
+
+
+## Копирование репозитория todo-app-redux.
 
 - Создайте новый репозиторий на GitHub: `todo-app-redux`
 - Клонируйте этот репозиторий: `$ git clone https://github.com/shopot/todo-app-redux.git`
