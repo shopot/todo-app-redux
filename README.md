@@ -1,30 +1,46 @@
-# React + TypeScript + Vite
+# Redux Base
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Что должно быть сделано:
 
-Currently, two official plugins are available:
+1. Копировать ветку `main` исходного репозитория и создать отдельную ветку `redux-base` для этого задания.
+2. Сконфигурировать store, и обернуть компоненты в `<Provider />` в `App.tsx`.
+3. Реализовать reducer для store с `ADD_TODO`, `REMOVE_TODO` и `TOGGLE_TODO` с использованием массива из объектов `Todo`.
+3. Реализовать экшены `addTodo` , `removeTodo` и `toggleTodo` и их вызов для компонентов `<TodoForm />` и `<TodosListItem />`, экшены должны быть реализованы без асинхронной логики.
+4. Для конфигурации store использовать устаревшую функцию `createStore`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+Backend для этого задания не требуется, версии пакетов обновлять не нужно, устанавливать дополнительно пакеты не требуется.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Копирование репозитория todo-app-redux.
 
-- Configure the top-level `parserOptions` property like this:
+- Создайте новый репозиторий на GitHub: `todo-app-redux`
+- Клонируйте этот репозиторий: `$ git clone https://github.com/shopot/todo-app-redux.git`
+- Перейдите в директорию: `$ cd todo-app-redux`
+- Удалите `.git` директорию: `$ rm -rf .git`
+- Создайте пустой Git репозиторий : `$ git init`
+- Подключите удаленный репозиторий: `$ git remote add origin https://github.com/your_nickname/todo-app-redux.git`
+- Переименуйте ветку: `$ git branch -M main`
+- Добавьте существующие файлы в репозиторий: `$ gti add .`
+- Выполните первый коммит: `$ git commit -m "init: start project"`
+- Отправьте изменения в GitHub : `$ git push -u origin main`
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Установка и запуск
+
+- Использовать `node 18.x` или выше.
+
+```shell
+# Install the dependencies
+$ npm install
+
+# Start Vite development server
+$ npm run dev
+
+# Build production
+$ npm run build
+
+# Preview production after build production
+$ npm run preview
+
+# Start linting
+$ npm run lint
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
