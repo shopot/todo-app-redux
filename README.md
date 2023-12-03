@@ -13,7 +13,9 @@ Todo App for step-by-step migrating from Redux to React Query
   * Actions
   * Reducer
   * Store
-  * Developer Tools
+* Action Creators
+* Developer Tools
+* Redux & TypeScript
 
 ### Теория
 
