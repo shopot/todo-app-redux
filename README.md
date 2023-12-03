@@ -1,6 +1,6 @@
 # Tod App Redux
 
-Todo App for step-by-step migrating from Redux to React Query
+Todo App for step-by-step migrating from base Redux to RTK Query
 
 ## 1. Модуль Redux Base
 
