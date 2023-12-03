@@ -7,11 +7,13 @@
 3. Реализовать reducer `todosReducer` для store с `ADD_TODO`, `REMOVE_TODO` и `TOGGLE_TODO` с использованием массива из объектов `Todo`.
 3. Реализовать экшены `addTodo` , `removeTodo` и `toggleTodo` и их вызов для компонентов `<TodoForm />` и `<TodosListItem />`, экшены должны быть реализованы без асинхронной логики.
 4. Для конфигурации store использовать устаревшую функцию `createStore`.
+5. Подключить Redux DevTools.
 
 
 Backend для этого задания не требуется, версии пакетов обновлять не нужно, устанавливать дополнительно пакеты не нужно.
 
 ### Теория
+
 * [Redux Base](https://handsonreact.com/docs/redux)
 * [Redux Tutorial: An Overview and Walkthrough](https://www.taniarascia.com/redux-react-guide/)
 * [Простое соглашение об именах для Action Creators](https://decembersoft.com/posts/a-simple-naming-convention-for-action-creators-in-redux-js/)
@@ -20,7 +22,7 @@ Backend для этого задания не требуется, версии �
 * [Типизация Root State и Dispatch](https://redux.js.org/usage/usage-with-typescript#define-root-state-and-dispatch-types)
 * [Типизация useDispatch и useSelector](https://redux.js.org/usage/usage-with-typescript#define-typed-hooks)
 * [Использование типизированных хуков в компонентах](https://redux.js.org/usage/usage-with-typescript#use-typed-hooks-in-components)
-
+* [Redux DevTools Extension](https://github.com/reduxjs/redux-devtools/tree/main/extension#installation)
 
 
 ## Копирование репозитория todo-app-redux.
