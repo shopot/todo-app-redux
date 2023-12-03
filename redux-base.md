@@ -66,5 +66,5 @@ $ npm run preview
 $ npm run lint
 
 # Start tests
-$ npm run test
+$ npm run test:base
 ```

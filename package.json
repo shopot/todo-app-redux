@@ -9,7 +9,7 @@
     "build": "tsc && vite build",
     "lint": "tsc --noEmit && eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "test": "jest --verbose",
+    "test:base": "jest ./src/tests/redux-base --verbose",
     "backend": "json-server todos.json --port 3000"
   },
   "dependencies": {
