@@ -28,6 +28,7 @@ Todo App for step-by-step migrating from Redux to React Query
 * [Типизация useDispatch и useSelector](https://redux.js.org/usage/usage-with-typescript#define-typed-hooks)
 * [Использование типизированных хуков в компонентах](https://redux.js.org/usage/usage-with-typescript#use-typed-hooks-in-components)
 * [Redux DevTools Extension](https://github.com/reduxjs/redux-devtools/tree/main/extension#installation)
+* [Getting Redux DevTools to Work with TypeScript](https://www.mydatahack.com/getting-redux-devtools-to-work-with-typescript/)
 
 ### Практика
 
