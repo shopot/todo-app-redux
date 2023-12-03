@@ -18,8 +18,8 @@ export const TodosListItem: FC<Props> = ({
     console.log(`toggleTodoCompleted: ${id}`);
   };
 
-  const handleDelete = () => {
-    console.log(`deleteTodo: ${id}`);
+  const handleRemove = () => {
+    console.log(`removeTodo: ${id}`);
   };
 
   return (
@@ -33,7 +33,7 @@ export const TodosListItem: FC<Props> = ({
         />
       </div>
       <div className={`${styles.todoTitle} ${completedClass}`}>{title}</div>
-      <ButtonRemove onCLick={handleDelete} />
+      <ButtonRemove onCLick={handleRemove} />
     </div>
   );
 };
