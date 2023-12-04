@@ -4,6 +4,8 @@ Todo App for step-by-step migrating from base Redux to RTK Query
 
 ## 1. Модуль Redux Base
 
+`Уровень: Junior`
+
 ### В данном модуле необходимо изучить:
 
 * Redux base
