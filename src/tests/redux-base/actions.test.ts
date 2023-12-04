@@ -1,37 +1,37 @@
 import * as actions from '@/features/todos/store/actions';
 import * as constants from '@/features/todos/store/constants';
 
+const todoMock = {
+  id: 'c1a69b93-d3cb-49da-b736-87accbc7852f',
+  text: 'Understand What React Is',
+  completed: true,
+};
+
 describe('actions', () => {
   it('should create an action to add a todo', () => {
-    const text = 'Finish docs';
-
     const expectedAction = {
       type: constants.ADD_TODO,
-      payload: text,
+      payload: todoMock,
     };
 
-    expect(actions.addTodo(text)).toEqual(expectedAction);
+    expect(actions.addTodo(todoMock)).toEqual(expectedAction);
   });
 
   it('should create an action to toggle a todo', () => {
-    const id = 'cbac7c60-48f6-454b-804b-30761b5909c0';
-
     const expectedAction = {
       type: constants.TOGGLE_TODO,
-      payload: id,
+      payload: todoMock.id,
     };
 
-    expect(actions.toggleTodo(id)).toEqual(expectedAction);
+    expect(actions.toggleTodo(todoMock.id)).toEqual(expectedAction);
   });
 
   it('should create an action to remove a todo', () => {
-    const id = 'cbac7c60-48f6-454b-804b-30761b5909c0';
-
     const expectedAction = {
       type: constants.REMOVE_TODO,
-      payload: id,
+      payload: todoMock.id,
     };
 
-    expect(actions.removeTodo(id)).toEqual(expectedAction);
+    expect(actions.removeTodo(todoMock.id)).toEqual(expectedAction);
   });
 });

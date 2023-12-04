@@ -25,7 +25,7 @@ describe('todos reducer', () => {
   it('should handle ADD_TODO', () => {
     const action: ActionTypes = {
       type: constants.ADD_TODO,
-      payload: 'Run the tests',
+      payload: stateMock[0],
     };
 
     const result = reducer([], action);
@@ -34,15 +34,14 @@ describe('todos reducer', () => {
   });
 
   test('should handle ADD_TODO to an existing list', () => {
+    const newTodoItem = { text: 'Use Redux', completed: false, id: uuidMock };
+
     const action: ActionTypes = {
       type: constants.ADD_TODO,
-      payload: 'Use Redux',
+      payload: newTodoItem,
     };
 
-    expect(reducer(stateMock, action)).toEqual([
-      stateMock[0],
-      { text: 'Use Redux', completed: false, id: uuidMock },
-    ]);
+    expect(reducer(stateMock, action)).toEqual(stateMock.concat(newTodoItem));
   });
 
   it('should handle TOGGLE_TODO', () => {
