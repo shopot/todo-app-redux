@@ -8,14 +8,14 @@ const stateMock = [{ id: uuidMock, text: 'Run the tests', completed: false }];
 
 jest.mock('uuid', () => ({ v4: () => uuidMock }));
 
-type TodosActionTypes =
+type ActionTypes =
   | ReturnType<typeof actions.addTodo>
   | ReturnType<typeof actions.removeTodo>
   | ReturnType<typeof actions.toggleTodo>;
 
 describe('todos reducer', () => {
   it('should return the initial state', () => {
-    const action = {} as TodosActionTypes;
+    const action = {} as ActionTypes;
 
     const result = reducer(undefined, action);
 
@@ -23,7 +23,7 @@ describe('todos reducer', () => {
   });
 
   it('should handle ADD_TODO', () => {
-    const action: TodosActionTypes = {
+    const action: ActionTypes = {
       type: constants.ADD_TODO,
       payload: stateMock[0],
     };
@@ -36,7 +36,7 @@ describe('todos reducer', () => {
   test('should handle ADD_TODO to an existing list', () => {
     const newTodoItem = { text: 'Use Redux', completed: false, id: uuidMock };
 
-    const action: TodosActionTypes = {
+    const action: ActionTypes = {
       type: constants.ADD_TODO,
       payload: newTodoItem,
     };
@@ -45,7 +45,7 @@ describe('todos reducer', () => {
   });
 
   it('should handle TOGGLE_TODO', () => {
-    const action: TodosActionTypes = {
+    const action: ActionTypes = {
       type: constants.TOGGLE_TODO,
       payload: uuidMock,
     };
@@ -56,7 +56,7 @@ describe('todos reducer', () => {
   });
 
   it('should handle REMOVE_TODO', () => {
-    const action: TodosActionTypes = {
+    const action: ActionTypes = {
       type: constants.REMOVE_TODO,
       payload: uuidMock,
     };
