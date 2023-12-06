@@ -22,10 +22,7 @@ Todo App for step-by-step migrating from base Redux to RTK Query
 ### Теория
 
 * [Знакомство с Redux](https://github.com/shopot/react-101/tree/redux-base)
-
-<details>
-  <summary>Доп. ссылки на теорию</summary>
-
+---
 * [Redux Base](https://handsonreact.com/docs/redux)
 * [Redux Tutorial: An Overview and Walkthrough](https://www.taniarascia.com/redux-react-guide/)
 * [Простое соглашение об именах для Action Creators](https://decembersoft.com/posts/a-simple-naming-convention-for-action-creators-in-redux-js/)
@@ -37,8 +34,29 @@ Todo App for step-by-step migrating from base Redux to RTK Query
 * [Redux DevTools Extension](https://github.com/reduxjs/redux-devtools/tree/main/extension#installation)
 * [Getting Redux DevTools to Work with TypeScript](https://www.mydatahack.com/getting-redux-devtools-to-work-with-typescript/)
 
-</detail>
 
-### Практика
+
+### Задание
 
 Необходимо выполнить задание [Redux Base](./redux-base.md)
+
+## 2. Модуль Redux Thunk
+
+`Уровень: Junior`
+
+### В данном модуле необходимо изучить:
+
+* Redux Middleware
+* Redux Thunk
+* Thunk functions
+* Thunk action creators
+* Redux Thunk & TypeScript
+
+### Теория
+
+* [Знакомство с Redux](https://github.com/shopot/react-101/tree/redux-base)
+---
+* [Redux Thunk](https://handsonreact.com/docs/redux-thunk)
+* [React Redux Thunk](https://handsonreact.com/docs/react-redux-thunk)
+* [Redux Thunk Explained with Examples](https://www.freecodecamp.org/news/redux-thunk-explained-with-examples/)
+* [Redux: Writing Logic with Thunks](https://redux.js.org/usage/writing-logic-thunks)
