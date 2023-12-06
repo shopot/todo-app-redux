@@ -65,9 +65,10 @@ Todo App for step-by-step migrating from base Redux to RTK Query
 <details>
   <summary>Доп. ссылки на теорию</summary>
 
-* [Redux Thunk](https://handsonreact.com/docs/redux-thunk)
-* [React Redux Thunk](https://handsonreact.com/docs/react-redux-thunk)
-* [Redux Thunk Explained with Examples](https://www.freecodecamp.org/news/redux-thunk-explained-with-examples/)
-* [Redux: Writing Logic with Thunks](https://redux.js.org/usage/writing-logic-thunks)
+* [Redux Thunk (handsonreact.com)](https://handsonreact.com/docs/redux-thunk)
+* [React Redux Thunk (handsonreact.com)](https://handsonreact.com/docs/react-redux-thunk)
+* [Thunk middleware for Redux (redux-thunk)](https://github.com/reduxjs/redux-thunk)
+* [Redux Thunk Explained with Examples (freecodecamp.org)](https://www.freecodecamp.org/news/redux-thunk-explained-with-examples/)
+* [Redux: Writing Logic with Thunks (redux.js.org)](https://redux.js.org/usage/writing-logic-thunks)
 
 </details>
