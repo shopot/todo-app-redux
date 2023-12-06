@@ -21,6 +21,7 @@ Backend для этого задания не требуется, версии �
 
 ### Теория
 
+* [Знакомство с Redux](https://github.com/shopot/react-101/tree/redux-base)
 * [Redux Base](https://handsonreact.com/docs/redux)
 * [Redux Tutorial: An Overview and Walkthrough](https://www.taniarascia.com/redux-react-guide/)
 * [Простое соглашение об именах для Action Creators](https://decembersoft.com/posts/a-simple-naming-convention-for-action-creators-in-redux-js/)
