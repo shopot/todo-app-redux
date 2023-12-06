@@ -21,6 +21,11 @@ Todo App for step-by-step migrating from base Redux to RTK Query
 
 ### Теория
 
+* [Знакомство с Redux](https://github.com/shopot/react-101/tree/redux-base)
+
+<details>
+  <summary>Доп. ссылки на теорию</summary>
+
 * [Redux Base](https://handsonreact.com/docs/redux)
 * [Redux Tutorial: An Overview and Walkthrough](https://www.taniarascia.com/redux-react-guide/)
 * [Простое соглашение об именах для Action Creators](https://decembersoft.com/posts/a-simple-naming-convention-for-action-creators-in-redux-js/)
@@ -31,6 +36,8 @@ Todo App for step-by-step migrating from base Redux to RTK Query
 * [Использование типизированных хуков в компонентах](https://redux.js.org/usage/usage-with-typescript#use-typed-hooks-in-components)
 * [Redux DevTools Extension](https://github.com/reduxjs/redux-devtools/tree/main/extension#installation)
 * [Getting Redux DevTools to Work with TypeScript](https://www.mydatahack.com/getting-redux-devtools-to-work-with-typescript/)
+
+</detail>
 
 ### Практика
 
