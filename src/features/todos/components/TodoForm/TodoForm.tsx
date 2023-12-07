@@ -2,7 +2,7 @@ import { FC, useState } from 'react';
 
 import styles from './TodoForm.module.css';
 
-import { Button } from '@/shared/components';
+import { Button } from '@/components/Button';
 
 export const TodoForm: FC = () => {
   const [title, setTitle] = useState('');

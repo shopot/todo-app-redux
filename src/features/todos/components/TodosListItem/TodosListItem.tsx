@@ -2,16 +2,14 @@ import { FC } from 'react';
 
 import styles from './TodosListItem.module.css';
 
-import { ButtonRemove } from '@/shared/components';
+import { ButtonRemove } from '@/components/ButtonRemove';
 import { Todo } from '../../types';
 
 type Props = {
   todo: Todo;
 };
 
-export const TodosListItem: FC<Props> = ({
-  todo: { id, title, completed },
-}) => {
+export const TodosListItem: FC<Props> = ({ todo: { id, title, completed } }) => {
   const completedClass = completed ? styles.todoTitleThrough : '';
 
   const handleChange = () => {
