@@ -56,8 +56,21 @@
   },
   "settings": {
     "import/resolver": {
+      "node": {
+        "extensions": [
+          ".cjs",
+          ".ts",
+          ".tsx",
+          ".js",
+          ".jsx"
+        ]
+      },
       "typescript": {
-        "project": "./tsconfig.json"
+        "project": "./tsconfig.json",
+        "extensions": [
+          ".ts",
+          ".tsx"
+        ]
       }
     },
     "react": {
