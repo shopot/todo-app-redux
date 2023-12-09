@@ -1,12 +1,18 @@
+/**
+ * @vitest-environment jsdom
+ */
+
+import { vi } from 'vitest';
+
 import { initialState, todosReducer as reducer } from '@/features/todos/store/reducer';
 import * as actions from '@/features/todos/store/actions';
 import * as constants from '@/features/todos/store/constants';
+import { DataGenerator } from '../DataGenerator';
 
-const uuidMock = 'cbac7c60-48f6-454b-804b-30761b5909c0';
+const todoMock = DataGenerator.todoGenerator();
+const stateMock = [todoMock];
 
-const stateMock = [{ id: uuidMock, text: 'Run the tests', completed: false }];
-
-jest.mock('uuid', () => ({ v4: () => uuidMock }));
+vi.mock('uuid', () => ({ v4: () => todoMock.id }));
 
 type ActionTypes =
   | ReturnType<typeof actions.addTodo>
@@ -34,7 +40,7 @@ describe('todos reducer', () => {
   });
 
   test('should handle ADD_TODO to an existing list', () => {
-    const newTodoItem = { text: 'Use Redux', completed: false, id: uuidMock };
+    const newTodoItem = DataGenerator.todoGenerator();
 
     const action: ActionTypes = {
       type: constants.ADD_TODO,
@@ -47,7 +53,7 @@ describe('todos reducer', () => {
   it('should handle TOGGLE_TODO', () => {
     const action: ActionTypes = {
       type: constants.TOGGLE_TODO,
-      payload: uuidMock,
+      payload: todoMock.id,
     };
 
     const result = reducer(stateMock, action);
@@ -58,7 +64,7 @@ describe('todos reducer', () => {
   it('should handle REMOVE_TODO', () => {
     const action: ActionTypes = {
       type: constants.REMOVE_TODO,
-      payload: uuidMock,
+      payload: todoMock.id,
     };
 
     const result = reducer(stateMock, action);

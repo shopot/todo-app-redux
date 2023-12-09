@@ -1,11 +1,13 @@
+/**
+ * @vitest-environment jsdom
+ */
+
 import * as actions from '@/features/todos/store/actions';
 import * as constants from '@/features/todos/store/constants';
 
-const todoMock = {
-  id: 'c1a69b93-d3cb-49da-b736-87accbc7852f',
-  text: 'Understand What React Is',
-  completed: true,
-};
+import { DataGenerator } from '../DataGenerator';
+
+const todoMock = DataGenerator.todoGenerator();
 
 describe('actions', () => {
   it('should create an action to add a todo', () => {
