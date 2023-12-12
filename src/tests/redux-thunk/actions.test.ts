@@ -10,7 +10,7 @@ import {
   loadTodosAsync,
   addTodoAsync,
   toggleTodoAsync,
-  removeTodo,
+  removeTodoAsync,
 } from '@/features/todos/store/actions';
 import * as constants from '@/features/todos/store/constants';
 
@@ -43,10 +43,10 @@ describe('actionsAsync', () => {
     });
   });
 
-  it('handles delete todo', async () => {
+  it('handles remove todo', async () => {
     const store = mockStore();
 
-    await store.dispatch(removeTodo(db.todos[0].id));
+    await store.dispatch(removeTodoAsync(db.todos[0].id));
 
     const actions = store.getActions();
 

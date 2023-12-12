@@ -72,3 +72,7 @@ Todo App for step-by-step migrating from base Redux to RTK Query
 * [Redux: Writing Logic with Thunks (redux.js.org)](https://redux.js.org/usage/writing-logic-thunks)
 
 </details>
+
+### Задание
+
+Необходимо выполнить задание [Redux Thunk](./redux-thunk.md)
