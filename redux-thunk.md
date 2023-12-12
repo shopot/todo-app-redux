@@ -1,52 +1,39 @@
 # Redux Thunk
 
+Бэкенд (json-server) для этого задания запускается командой `npm run backend`, после запуска доступен по адресу `http://localhost:3000/todos`.
+
+Официальная документация по работе с json-server: https://github.com/typicode/json-server
+
+Шпаргалка по JSON Server: [JSON Server](https://my-js.org/docs/cheatsheet/json-server/)
+
+
 ## Что должно быть сделано:
 
 1. Задание  делается на основе предыдущего модуля Redux Base, создать отдельную ветку `redux-thunk` для этого задания.
-2. Реализовать асинхронные экшены `loadTodosAsync`,  `addTodoAsync`,  `toggleTodoAsync`,
-  removeTodo,`addTodo` , `removeTodo` и `toggleTodo` и их вызов для компонентов `<TodoForm />` и `<TodosListItem />`, экшены должны быть реализованы без асинхронной логики.
-2. Сконфигурировать store, и обернуть компоненты в `<Provider />` в `App.tsx`.
-3. Реализовать reducer `todosReducer` для store с `ADD_TODO`, `REMOVE_TODO` и `TOGGLE_TODO` с использованием массива из объектов `Todo`.
-
-4. Для конфигурации store использовать устаревшую функцию `createStore`.
-5. Для генерации id использовать `uuid v4`.
-6. Подключить Redux DevTools Extension.
+2. Реализовать слой API для работы с бэкендом для CRUD операций, для реализации использовать стандартный `fetch` или `axios`.
+3. Сконфигурировать store, и добавить `thunk` middleware для обработки асинхронных экшенов.
+4. Реализовать асинхронные экшены `loadTodosAsync`,  `addTodoAsync`,  `toggleTodoAsync`, `removeTodoAsync` и их вызов для компонентов `<TodoForm />` и `<TodosListItem />`, экшены должны взаимодействовать со слоем API и отправлять/принимать запросы к бэкенду, в результате которых обновлять Redux Store.
 
 
-Backend для этого задания не требуется, версии пакетов обновлять не нужно, устанавливать дополнительно пакеты не нужно.
+Версии пакетов обновлять не нужно, устанавливать дополнительно пакеты не нужно, реализовывать жизненный цикл запросов (isLoading, isError, isFetching и тд) не требуется.
 
 ### Условия выполнения
 
 * Приложение работает.
-* Все тесты проходят: `npm run test:base`.
+* Все тесты проходят:
+   - `npm run test:base`
+   - `npm run test:thunk`
 * Линтер не выдает ошибок и предупреждений.
 
 ### Теория
 
 * [Знакомство с Redux](https://github.com/shopot/react-101/tree/redux-base)
-* [Redux Base](https://handsonreact.com/docs/redux)
-* [Redux Tutorial: An Overview and Walkthrough](https://www.taniarascia.com/redux-react-guide/)
-* [Простое соглашение об именах для Action Creators](https://decembersoft.com/posts/a-simple-naming-convention-for-action-creators-in-redux-js/)
-* [Flux Standard Action](https://github.com/redux-utilities/flux-standard-action)
-* [Redux & TypeScript](https://handsonreact.com/docs/redux-typescript)
-* [Типизация Root State и Dispatch](https://redux.js.org/usage/usage-with-typescript#define-root-state-and-dispatch-types)
-* [Типизация useDispatch и useSelector](https://redux.js.org/usage/usage-with-typescript#define-typed-hooks)
-* [Использование типизированных хуков в компонентах](https://redux.js.org/usage/usage-with-typescript#use-typed-hooks-in-components)
-* [Redux DevTools Extension](https://github.com/reduxjs/redux-devtools/tree/main/extension#installation)
-* [Getting Redux DevTools to Work with TypeScript](https://www.mydatahack.com/getting-redux-devtools-to-work-with-typescript/)
+* [Redux Thunk (handsonreact.com)](https://handsonreact.com/docs/redux-thunk)
+* [React Redux Thunk (handsonreact.com)](https://handsonreact.com/docs/react-redux-thunk)
+* [Thunk middleware for Redux (redux-thunk)](https://github.com/reduxjs/redux-thunk)
+* [Redux Thunk Explained with Examples (freecodecamp.org)](https://www.freecodecamp.org/news/redux-thunk-explained-with-examples/)
+* [Redux: Writing Logic with Thunks (redux.js.org)](https://redux.js.org/usage/writing-logic-thunks)
 
-## Копирование репозитория todo-app-redux.
-
-- Создайте новый репозиторий на GitHub: `todo-app-redux`
-- Клонируйте этот репозиторий: `$ git clone https://github.com/shopot/todo-app-redux.git`
-- Перейдите в директорию: `$ cd todo-app-redux`
-- Удалите `.git` директорию: `$ rm -rf .git`
-- Создайте пустой Git репозиторий : `$ git init`
-- Подключите удаленный репозиторий: `$ git remote add origin https://github.com/your_nickname/todo-app-redux.git`
-- Переименуйте ветку: `$ git branch -M main`
-- Добавьте существующие файлы в репозиторий: `$ gti add .`
-- Выполните первый коммит: `$ git commit -m "init: start project"`
-- Отправьте изменения в GitHub : `$ git push -u origin main`
 
 ## Установка и запуск
 
@@ -70,4 +57,5 @@ $ npm run lint
 
 # Start tests
 $ npm run test:base
+$ npm run test:thunk
 ```
