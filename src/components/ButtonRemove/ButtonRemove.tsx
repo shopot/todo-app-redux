@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { JSX } from 'react';
 
 import styles from './ButtonRemove.module.css';
 
@@ -6,7 +6,7 @@ type Props = {
   onCLick: () => void;
 };
 
-export const ButtonRemove: FC<Props> = ({ onCLick }) => {
+export const ButtonRemove = ({ onCLick }: Props): JSX.Element => {
   return (
     <svg
       onClick={onCLick}

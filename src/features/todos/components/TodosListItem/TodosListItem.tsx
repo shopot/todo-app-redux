@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { JSX } from 'react';
 
 import styles from './TodosListItem.module.css';
 
@@ -9,7 +9,7 @@ type Props = {
   todo: Todo;
 };
 
-export const TodosListItem: FC<Props> = ({ todo: { id, title, completed } }) => {
+export const TodosListItem = ({ todo: { id, title, completed } }: Props): JSX.Element => {
   const completedClass = completed ? styles.todoTitleThrough : '';
 
   const handleChange = () => {

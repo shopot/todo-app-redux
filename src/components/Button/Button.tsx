@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from 'react';
+import { PropsWithChildren, JSX } from 'react';
 
 import styles from './Button.module.css';
 
@@ -6,7 +6,7 @@ type Props = {
   onCLick: () => void;
 };
 
-export const Button: FC<PropsWithChildren<Props>> = ({ onCLick, children }) => {
+export const Button = ({ onCLick, children }: PropsWithChildren<Props>): JSX.Element => {
   return (
     <button onClick={onCLick} className={styles.button} type="button">
       {children}

@@ -1,10 +1,10 @@
-import { FC, useState } from 'react';
+import { JSX, useState } from 'react';
 
 import styles from './TodoForm.module.css';
 
 import { Button } from '@/components/Button';
 
-export const TodoForm: FC = () => {
+export const TodoForm = (): JSX.Element => {
   const [title, setTitle] = useState('');
 
   const handleClick = (): void => {

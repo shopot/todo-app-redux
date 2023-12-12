@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { JSX } from 'react';
 
 import styles from './TodosList.module.css';
 
@@ -17,7 +17,7 @@ const todos = [
   },
 ];
 
-export const TodosList: FC = () => {
+export const TodosList = (): JSX.Element => {
   return (
     <div className={styles.todoList}>
       {todos.map((todo) => (
