@@ -1,0 +1,27 @@
+### Get all todos
+GET http://[::1]:3000/todos HTTP/1.1
+
+
+### Add new Todo
+POST http://[::1]:3000/todos HTTP/1.1
+content-type: application/json
+
+{
+  "id": "2eedc372-201c-4591-95f7-03d3a395f983",
+  "title": "Learn about Redux",
+  "completed": false
+}
+
+### Update todo by id
+PUT  http://[::1]:3000/todos/2eedc372-201c-4591-95f7-03d3a395f983 HTTP/1.1
+content-type: application/json
+
+{
+  "id": "2eedc372-201c-4591-95f7-03d3a395f983",
+  "title": "Learn about Redux",
+  "completed": true
+}
+
+
+### Remove todo by id
+DELETE http://[::1]:3000/todos/2eedc372-201c-4591-95f7-03d3a395f983 HTTP/1.1
