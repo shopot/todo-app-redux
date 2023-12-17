@@ -10,10 +10,10 @@
   @apply w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 focus:ring-0
 }
 
-.todoTitle {
+.todoText {
   @apply w-full pl-3
 }
 
-.todoTitleThrough {
+.todoTextThrough {
   @apply line-through text-gray-500
 }

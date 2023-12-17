@@ -9,8 +9,10 @@ type Props = {
   todo: Todo;
 };
 
-export const TodosListItem = ({ todo: { id, title, completed } }: Props): JSX.Element => {
-  const completedClass = completed ? styles.todoTitleThrough : '';
+export const TodosListItem = ({ todo }: Props): JSX.Element => {
+  const { id, text, completed } = todo;
+
+  const completedClass = completed ? styles.todoTextThrough : '';
 
   const handleChange = () => {
     console.log(`toggleTodoCompleted: ${id}`);
@@ -30,7 +32,7 @@ export const TodosListItem = ({ todo: { id, title, completed } }: Props): JSX.El
           className={styles.todoInput}
         />
       </div>
-      <div className={`${styles.todoTitle} ${completedClass}`}>{title}</div>
+      <div className={`${styles.todoText} ${completedClass}`}>{text}</div>
       <ButtonRemove onCLick={handleRemove} />
     </div>
   );

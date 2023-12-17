@@ -5,14 +5,15 @@ import styles from './TodoForm.module.css';
 import { Button } from '@/components/Button';
 
 export const TodoForm = (): JSX.Element => {
-  const [title, setTitle] = useState('');
+  const [text, setText] = useState('');
 
   const handleClick = (): void => {
-    const trimmedValue = title.trim();
+    const trimmedValue = text.trim();
 
     if (trimmedValue) {
       console.log('Add new todo:', trimmedValue);
-      setTitle('');
+
+      setText('');
     }
   };
 
@@ -20,8 +21,8 @@ export const TodoForm = (): JSX.Element => {
     <form className={styles.formWrapper}>
       <div className={styles.formInputWrapper}>
         <input
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          value={text}
+          onChange={(e) => setText(e.target.value)}
           className={styles.formInput}
           type="text"
           placeholder="Add your new todo"
