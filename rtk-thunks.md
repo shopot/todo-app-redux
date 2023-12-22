@@ -6,23 +6,37 @@
 
 Шпаргалка по JSON Server: [JSON Server](https://my-js.org/docs/cheatsheet/json-server/)
 
-
 ## Что должно быть сделано:
 
 1. Задание выполняется на основе ветки `redux-toolkit`, создать отдельную ветку `redux-toolkit-thunks` для этого задания.
-2. Реализовать слой API для работы с бэкендом для CRUD операций, для реализации использовать стандартный `fetch` или `axios`.
-3. Сконфигурировать store, и добавить `thunk` middleware для обработки асинхронных экшенов.
-4. Реализовать асинхронные экшены `loadTodosAsync`,  `addTodoAsync`,  `toggleTodoAsync`, `removeTodoAsync` и их вызов для компонентов `<TodoForm />` и `<TodosListItem />`, экшены должны взаимодействовать со слоем API и отправлять/принимать запросы к бэкенду, в результате которых обновлять Redux Store.
+2. Реализовать thunks-функции (асинхронные экшены) `fetchAllTodos`, `addTodo`, `removeTodo`, `toggleTodo` для работы с бэкендом для CRUD операций, для реализации использовать `axios` и `createAsyncThunk`.
+2. Реализовать `todosSlice` с использованием `createSlice` и `extraReducers` с синтаксисом `builder.addCase` для thunk-функций `fetchAllTodos`, `addTodo`, `removeTodo`, `toggleTodo`.
+3. Сконфигурировать store, и добавить `todosSlice`.
+4. Реализовать вызов thunk-функций для компонентов
+    * `<TodosList />` - получение данных через `useEffect` с использованием `fetchAllTodos`.
+    * `<TodoForm />` - вызов `addTodo`.
+    * `<TodosListItem />` - вызов `removeTodo`, `toggleTodo`.
 
+### Версии пакетов
 
-Версии пакетов обновлять не нужно, устанавливать дополнительно пакеты не нужно, реализовывать жизненный цикл запросов (isLoading, isError, isFetching и тд) не требуется.
+Для этого задания используются следующие версии пакетов:
+
+```json
+"dependencies": {
+    "@reduxjs/toolkit": "^2.0.1",
+    "axios": "^1.6.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.0.4",
+    "uuid": "^9.0.1"
+  },
+  ```
 
 ### Условия выполнения
 
 * Приложение работает.
 * Все тесты проходят:
-   - `npm run test:base`
-   - `npm run test:thunk`
+   - `npm run test:rtk-thunks`
 * Линтер не выдает ошибок и предупреждений.
 
 ### Теория
@@ -40,6 +54,10 @@
 - Использовать `node 18.x` или выше.
 
 ```shell
+# Create new branch for this task
+$ git checkout redux-toolkit
+$ git checkout -b redux-toolkit-thunks
+
 # Install the dependencies
 $ npm install
 
@@ -56,6 +74,5 @@ $ npm run preview
 $ npm run lint
 
 # Start tests
-$ npm run test:base
-$ npm run test:thunk
+$ npm run test:rtk-thunks
 ```
