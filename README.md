@@ -4,6 +4,7 @@ Todo App for step-by-step migrating from base Redux to RTK Query
 
 * [1. Модуль Redux Base](#1-модуль-redux-base)
 * [2. Модуль Redux Thunk](#2-модуль-redux-thunk)
+* [3. Модуль Redux Toolkit and Thunks](#3-модуль-redux-toolkit-and-thunks)
 
 ## 1. Модуль Redux Base
 
@@ -93,17 +94,17 @@ Todo App for step-by-step migrating from base Redux to RTK Query
 
 ### Теория
 
-* [📚 Знакомство с Redux (react-101)](https://github.com/shopot/react-101/tree/redux-base)
-* [📚 Знакомство с Redux Toolkit (react-101)](https://github.com/shopot/react-101/tree/redux-toolkit-quick)
+* [Знакомство с Redux (react-101)](https://github.com/shopot/react-101/tree/redux-base)
+* [Знакомство с Redux Toolkit (react-101)](https://github.com/shopot/react-101/tree/redux-toolkit-quick)
 
 <details>
   <summary>Доп. ссылки на теорию</summary>
 
-* [📚 Redux Toolkit Quick Start (redux.js.org)](https://redux-toolkit.js.org/tutorials/quick-start)
-* [📚 createSlice (redux.js.org)](https://redux-toolkit.js.org/api/createSlice)
-* [📚 createAsyncThunk (redux.js.org)](https://redux-toolkit.js.org/api/createAsyncThunk)
+* [Redux Toolkit Quick Start (redux.js.org)](https://redux-toolkit.js.org/tutorials/quick-start)
+* [createSlice (redux.js.org)](https://redux-toolkit.js.org/api/createSlice)
+* [createAsyncThunk (redux.js.org)](https://redux-toolkit.js.org/api/createAsyncThunk)
 * [📺 Асинхронная работа с Redux Toolkit и createAsyncThunk (youtube.com)](https://www.youtube.com/watch?v=6RTbC8Acj1M)
-* [📚 Mastering Async Actions within createAsyncThunk in Redux Toolkit](https://blog.stackademic.com/mastering-async-actions-within-createasyncthunk-in-redux-toolkit-382af0eaae57)
+* [Mastering Async Actions within createAsyncThunk in Redux Toolkit](https://blog.stackademic.com/mastering-async-actions-within-createasyncthunk-in-redux-toolkit-382af0eaae57)
 
 </details>
 
