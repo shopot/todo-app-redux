@@ -76,3 +76,37 @@ Todo App for step-by-step migrating from base Redux to RTK Query
 ### Задание
 
 Необходимо выполнить задание [Redux Thunk](./redux-thunk.md)
+
+
+## 3. Модуль Redux Toolkit and Thunks
+
+`Уровень: Junior`
+
+### В данном модуле необходимо изучить:
+
+* Basics Redux Toolkit
+* Redux State Slice
+* Redux State and Actions
+* Async request lifecycles
+* Basics usage createAsyncThunk
+* Redux Toolkit & TypeScript
+
+### Теория
+
+* [📚 Знакомство с Redux (react-101)](https://github.com/shopot/react-101/tree/redux-base)
+* [📚 Знакомство с Redux Toolkit (react-101)](https://github.com/shopot/react-101/tree/redux-toolkit-quick)
+
+<details>
+  <summary>Доп. ссылки на теорию</summary>
+
+* [📚 Redux Toolkit Quick Start (redux.js.org)](https://redux-toolkit.js.org/tutorials/quick-start)
+* [📚 createSlice (redux.js.org)](https://redux-toolkit.js.org/api/createSlice)
+* [📚 createAsyncThunk (redux.js.org)](https://redux-toolkit.js.org/api/createAsyncThunk)
+* [📺 Асинхронная работа с Redux Toolkit и createAsyncThunk (youtube.com)](https://www.youtube.com/watch?v=6RTbC8Acj1M)
+* [📚 Mastering Async Actions within createAsyncThunk in Redux Toolkit](https://blog.stackademic.com/mastering-async-actions-within-createasyncthunk-in-redux-toolkit-382af0eaae57)
+
+</details>
+
+### Задание
+
+Необходимо выполнить задание [Redux Toolkit and Thunks](./rtk-thunks.md)
