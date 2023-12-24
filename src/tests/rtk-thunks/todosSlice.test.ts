@@ -3,7 +3,13 @@ import { describe } from 'vitest';
 import { db } from '../server';
 
 import { setupStore } from '@/store';
-import { todosReducer as reducer, addTodo, removeTodo, toggleTodo } from '@/features/todos';
+import {
+  todosReducer as reducer,
+  addTodo,
+  removeTodo,
+  toggleTodo,
+  fetchAllTodos,
+} from '@/features/todos';
 
 type Todo = (typeof db.todos)[0];
 
@@ -33,6 +39,18 @@ describe('todosReducer', () => {
 });
 
 describe('Redux Store', () => {
+  it('should handle fetching todos list', async () => {
+    const { store, nextState } = setup([], [...db.todos]);
+
+    await store.dispatch(fetchAllTodos());
+
+    console.log(nextState);
+
+    console.log(store.getState());
+
+    expect(store.getState()).toEqual(nextState);
+  });
+
   it('should handle a todo being added to an empty list', async () => {
     const { store, nextState } = setup([], [db.todos[0]]);
 
