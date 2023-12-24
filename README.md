@@ -110,4 +110,4 @@ Todo App for step-by-step migrating from base Redux to RTK Query
 
 ### Задание
 
-Необходимо выполнить задание [Redux Toolkit and Thunks](./rtk-thunks.md)
+Необходимо выполнить задание [Redux Toolkit and Thunks](./redux-toolkit-thunks.md)
