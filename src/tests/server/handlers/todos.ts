@@ -6,9 +6,7 @@ import { getUrl } from '../../test-utils';
 export const todos = [
   // Get all items
   http.get(getUrl('/todos'), () => {
-    return HttpResponse.json({
-      results: db.todos,
-    });
+    return HttpResponse.json([...db.todos]);
   }),
 
   // Get an item by id
