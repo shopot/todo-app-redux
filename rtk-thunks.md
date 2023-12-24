@@ -36,7 +36,7 @@
 
 * Приложение работает.
 * Все тесты проходят:
-   - `npm run test:rtk-thunks`
+   - `npm run test:redux-toolkit`
 * Линтер не выдает ошибок и предупреждений.
 
 ### Теория
@@ -74,5 +74,5 @@ $ npm run preview
 $ npm run lint
 
 # Start tests
-$ npm run test:rtk-thunks
+$ npm run test:redux-toolkit
 ```
