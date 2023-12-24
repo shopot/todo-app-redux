@@ -41,13 +41,13 @@
 
 ### Теория
 
-* [📚 Знакомство с Redux (react-101)](https://github.com/shopot/react-101/tree/redux-base)
-* [📚 Знакомство с Redux Toolkit (react-101)](https://github.com/shopot/react-101/tree/redux-toolkit-quick)
-* [📚 Redux Toolkit Quick Start (redux.js.org)](https://redux-toolkit.js.org/tutorials/quick-start)
-* [📚 createSlice (redux.js.org)](https://redux-toolkit.js.org/api/createSlice)
-* [📚 createAsyncThunk (redux.js.org)](https://redux-toolkit.js.org/api/createAsyncThunk)
+* [Знакомство с Redux (react-101)](https://github.com/shopot/react-101/tree/redux-base)
+* [Знакомство с Redux Toolkit (react-101)](https://github.com/shopot/react-101/tree/redux-toolkit-quick)
+* [Redux Toolkit Quick Start (redux.js.org)](https://redux-toolkit.js.org/tutorials/quick-start)
+* [createSlice (redux.js.org)](https://redux-toolkit.js.org/api/createSlice)
+* [createAsyncThunk (redux.js.org)](https://redux-toolkit.js.org/api/createAsyncThunk)
 * [📺 Асинхронная работа с Redux Toolkit и createAsyncThunk (youtube.com)](https://www.youtube.com/watch?v=6RTbC8Acj1M)
-* [📚 Mastering Async Actions within createAsyncThunk in Redux Toolkit](https://blog.stackademic.com/mastering-async-actions-within-createasyncthunk-in-redux-toolkit-382af0eaae57)
+* [Mastering Async Actions within createAsyncThunk in Redux Toolkit](https://blog.stackademic.com/mastering-async-actions-within-createasyncthunk-in-redux-toolkit-382af0eaae57)
 
 ## Установка и запуск
 
