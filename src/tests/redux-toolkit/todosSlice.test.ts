@@ -44,10 +44,6 @@ describe('Redux Store', () => {
 
     await store.dispatch(fetchAllTodos());
 
-    console.log(nextState);
-
-    console.log(store.getState());
-
     expect(store.getState()).toEqual(nextState);
   });
 
